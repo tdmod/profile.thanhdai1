@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile - Nguyễn Thanh Đại</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 15px;
+    }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      padding: 5px;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+      box-shadow: 0 0 15px rgba(255, 154, 158, 0.7);
+    }
+    .avatar img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      text-align: center;
+      text-shadow: 0 0 5px #ff9a9e;
+    }
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      margin-bottom: 20px;
+    }
+    .marquee p {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 12s linear infinite;
+      font-weight: 600;
+      color: #ffe6e6;
+      letter-spacing: 0.05em;
+    }
+    @keyframes marquee {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    .info {
+      max-width: 350px;
+      width: 100%;
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 154, 158, 0.4);
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .social-links {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+    .social-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #ff9a9e;
+    }
+    /* Responsive */
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      .avatar {
+        width: 120px;
+        height: 120px;
+      }
+      .avatar img {
+        width: 110px;
+        height: 110px;
+      }
+      .info {
+        font-size: 0.9rem;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="avatar">
+    <img src="https://i.pravatar.cc/150?u=nguyenthandai" alt="Avatar" />
+  </div>
+  <h1>Nguyễn Thanh Đại</h1>
+
+  <div class="marquee">
+    <p>Chào mừng bạn đến với profile cá nhân của tôi! Hãy kết nối để cùng phát triển.</p>
+  </div>
+
+  <div class="info">
+    Xin chào! Mình là Nguyễn Thanh Đại, một người đam mê công nghệ và lập trình web.  
+    Đây là trang profile đơn giản để giới thiệu bản thân và kết nối với mọi người.
+    <div class="social-links" style="margin-top:15px;">
+      <a href="mailto:nguyenthandai@example.com" title="Email">&#9993;</a>
+      <a href="https://facebook.com/nguyenthandai" target="_blank" rel="noopener" title="Facebook">f</a>
+      <a href="https://github.com/nguyenthandai" target="_blank" rel="noopener" title="GitHub">GH</a>
+      <a href="https://linkedin.com/in/nguyenthandai" target="_blank" rel="noopener" title="LinkedIn">in</a>
+    </div>
+  </div>
+</body>
+</html>
